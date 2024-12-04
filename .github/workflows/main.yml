@@ -21,7 +21,8 @@ jobs:
           mkdir -p "${{ github.workspace }}"
 
       - uses: actions/checkout@v3
-        with: can_bus_lab
+        with: 
+          ref: can_bus_lab
           path: ${{github.workspace}}/source
 
       - name: Create Build Environment
