@@ -63,9 +63,13 @@ void first_send() {
 
 void main_task(__unused void *params)
 {
+  printf("starting rx loop");
+  while(1){
   struct can2040_msg data;
   xQueueReceive(msgs, &data, portMAX_DELAY);
   printf("Got message\n");
+  printf("data: %s", data.data);
+  }
 }
 
 int main(void)
