@@ -81,7 +81,6 @@ int main(void)
     canbus_setup();
     TaskHandle_t task;
     first_send();
-    sleep_ms(3000);
     printf("starting reciever thread\n");
     
     xTaskCreate(main_task, "MainThread",
