@@ -32,8 +32,6 @@ jobs:
         working-directory: ${{github.workspace}}/source
         run: |
           cmake -E make_directory ${{github.workspace}}/build
-          cd source
-          git submodule update --init --recursive
       - name: Configure CMake
         # Use a bash shell so we can use the same syntax for environment variable
         # access regardless of the host operating system
