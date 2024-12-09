@@ -42,7 +42,7 @@ jobs:
         # The CMake binaries on the Github Actions machines are (as of this writing) 3.12
         run: |
           find ./* -name "can2040.cmake"
-          ls -la lib/can2040
+          ls -la 
           cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE -B ./build ./
         
       - name: Build
