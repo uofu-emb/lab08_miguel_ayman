@@ -30,9 +30,9 @@ endif()
 if(DEFINED ENV{CAN_PATH})
     set(CAN_PATH $ENV{CAN_PATH})
 else()
-    set(CAN_PATH lib/can2040)
+    set(CAN_PATH )
 endif()
-set(CAN_PATH )
+
 message("CAN2040 path: ${CAN_PATH}")
 # ====================================================================================
 cmake_minimum_required(VERSION 3.13)
